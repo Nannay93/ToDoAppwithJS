@@ -1,0 +1,119 @@
+body {
+  background: url("helsinki.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; 
+}
+
+h1{
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+#date{ text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 20pc;
+  width: 20pc;
+  margin: auto;
+
+}
+.userInput {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 7px;
+  width: 67%;
+  margin: auto;
+  top: 20px;
+  border: none;
+  padding: 20px;
+  padding-right: 50px;
+  border-radius: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.addbutton {
+  background: transparent;
+  right: 35px;
+  cursor: pointer;
+  position: absolute;
+  outline: none;
+  height: 60px;
+  width: 40px;
+  top: 15px;
+  margin: auto;
+  border: none;
+  margin: auto;
+  
+  
+}
+.addbutton:hover{
+  transform: scale(1.2)
+}
+.dolist {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 75%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.dolist::-webkit-scrollbar {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.element {
+  position: relative;
+  cursor: pointer;
+  transition: 0.1s;
+  height: fit-content;
+  width: 55%;
+  right:-5px;
+  text-align: center;
+  padding: 12px;
+  background: white;
+  border-radius: 20px;
+  padding-right: 80px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/*the to do where the curser is over will scale a little bigger & text color will change */
+.element:hover {
+  transform: scale(1.05);
+  color:blue;
+
+}
+
+.element .deletemark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 30px;
+  right: 15px;
+  float: right;
+}
+.element .checkmark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 30px;
+  right: 50px;
+  float: right;
+
+}
+
+

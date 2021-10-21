@@ -1,0 +1,33 @@
+<!--To Do List with Javascript by Hanna V. October 2021-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--This will display on the tab-->
+    <title>To Do List</title>
+    <!--Linking the stylesheet here-->
+    <link rel="stylesheet" href="style.css" /> <!--This stylesheet I created myself-->
+    <link rel="stylesheet" href="font-awesome.css" /> <!-- This stylesheet offers icons-->
+
+  <body>
+      <!--This will display on top of the page-->
+    <h1> Hanna's To Do List</h1>
+    <!--This will display the time-->
+    <p id="date"></p>
+    
+
+    <div class="container">
+        <!--User input here-->
+      <input type="text" class="userInput" placeholder="Add a new task..." />
+      <!--Clicking the button will add the item to the list--> 
+      <button class="addbutton" onclick="addNewItem()"> Add
+    <i class="fa fa-plus-circle"></i>
+      </button>
+      <!--The to do list is stored in the local storage-->
+      <div class="dolist"></div>
+      <!--Linking the JS script at the end so the page has time to load-->
+      <script src="app.js"></script>
+    </div>
+
+    
+  </body>
+</html>
+
