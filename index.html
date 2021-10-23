@@ -11,12 +11,13 @@
       <!--This will display on top of the page-->
     <h1> Hanna's To Do List</h1>
     <!--This will display the time-->
+    <button id="datebutton" onclick="displayDate()">Click here to see time</button>
     <p id="date"></p>
     
 
     <div class="container">
         <!--User input here-->
-      <input type="text" class="userInput" placeholder="Add a new task..." />
+      <input type="text" id="textfield" class="userInput" placeholder="Add a new task..." />
       <!--Clicking the button will add the item to the list--> 
       <button class="addbutton" onclick="addNewItem()"> Add
     <i class="fa fa-plus-circle"></i>

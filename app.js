@@ -1,6 +1,13 @@
 //Get Date and Time
-const x= new Date();
-document.getElementById("date").innerHTML = x;
+function displayDate() {
+  document.getElementById("date").innerHTML = Date();
+}
+
+
+//Variable
+
+var userText = document.querySelector(".userInput").value;
+
 
 
 //create new Array list called toDoList
@@ -9,7 +16,8 @@ var toDolist = [];
 
 //add new item to the list in the local storage
 function addNewItem() {
-  if (document.querySelector(".userInput").value.trim() != "") {
+
+ if (document.querySelector(".userInput").value.trim() != "") {
     toDolist.push(document.querySelector(".userInput").value.trim());
     if (localStorage.getItem("toDolist") == null) {
       localStorage.setItem("toDolist", JSON.stringify(toDolist));
@@ -18,7 +26,11 @@ function addNewItem() {
     }
     displayItem();
   }
+  //clear text field after submit
+  document.getElementById('textfield').value='';
+
 }
+
 
 //display list item, check mark and trash bin
 function displayItem() {
